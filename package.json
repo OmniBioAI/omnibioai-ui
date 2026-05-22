@@ -1,15 +1,16 @@
 {
-  "name": "@omnibioai/ui",
+  "name": "@man4ish/ui",
   "version": "1.0.0",
   "description": "OmniBioAI shared React component library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@omnibioai/design-tokens": "^1.0.0"
+    "@man4ish/design-tokens": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
@@ -19,5 +20,14 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/man4ish/omnibioai-ui.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "@man4ish:registry": "https://npm.pkg.github.com"
   }
 }
