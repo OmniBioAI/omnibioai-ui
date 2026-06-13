@@ -4,18 +4,22 @@
   "description": "OmniBioAI shared React component library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@man4ish/design-tokens": "^1.0.0"
+    "@man4ish/design-tokens": "file:../omnibioai-design-tokens"
   },
   "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.0.0",
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0"
+    "vite": "^5.0.0"
   },
   "scripts": {
     "build": "vite build",

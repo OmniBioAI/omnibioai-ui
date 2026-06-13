@@ -28,3 +28,16 @@
 .omni-card__body {
   padding: 14px 16px;
 }
+
+.omni-card--elevated {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.omni-card--clickable {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.omni-card--clickable:hover {
+  background: var(--color-bg-surface2);
+}

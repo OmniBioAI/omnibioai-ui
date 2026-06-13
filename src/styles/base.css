@@ -1,4 +1,4 @@
-@import '@omnibioai/design-tokens/tokens.css';
+@import '@man4ish/design-tokens/tokens.css';
 
 *, *::before, *::after {
   box-sizing: border-box;

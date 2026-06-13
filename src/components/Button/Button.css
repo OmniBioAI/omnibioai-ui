@@ -23,7 +23,7 @@
 
 .omni-btn--primary {
   background: var(--color-accent);
-  color: #000;
+  color: var(--color-on-accent);
   border: 0.5px solid var(--color-accent);
 }
 .omni-btn--primary:hover:not(:disabled) { opacity: 0.88; }

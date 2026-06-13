@@ -1,22 +1,24 @@
-import React from 'react';
 import './StatusDot.css';
 
+type Status = 'running' | 'success' | 'failed' | 'queued' | 'idle';
+
 interface StatusDotProps {
-  status: 'up' | 'down' | 'init' | 'warn';
+  status: Status;
   label?: string;
-  pulse?: boolean;
 }
 
-export function StatusDot({ status, label, pulse = false }: StatusDotProps) {
-  const classes = [
-    'omni-status-dot',
-    `omni-status-dot--${status}`,
-    pulse ? 'omni-status-dot--pulse' : '',
-  ].filter(Boolean).join(' ');
+const STATUS_CLASS: Record<Status, string> = {
+  running: 'omni-status-dot--up omni-status-dot--pulse',
+  success: 'omni-status-dot--up',
+  failed:  'omni-status-dot--down',
+  queued:  'omni-status-dot--warn',
+  idle:    'omni-status-dot--init',
+};
 
+export function StatusDot({ status, label }: StatusDotProps) {
   return (
     <span className="omni-status-dot-wrap">
-      <span className={classes} />
+      <span className={`omni-status-dot ${STATUS_CLASS[status]}`} />
       {label && <span className="omni-status-dot-label">{label}</span>}
     </span>
   );

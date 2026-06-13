@@ -30,10 +30,11 @@
 .omni-badge--info {
   background: var(--color-info-dim);
   color: var(--color-info);
-  border-color: rgba(0,148,255,0.30);
+  border-color: var(--color-info-border);
 }
 
-.omni-badge--default {
+.omni-badge--default,
+.omni-badge--neutral {
   background: var(--color-bg-surface2);
   color: var(--color-text-secondary);
   border-color: var(--color-border);
