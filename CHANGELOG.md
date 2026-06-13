@@ -1,16 +1,20 @@
 # Changelog
 
-All notable changes to @man4ish/ui are documented here.
-Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [Unreleased]
+## 1.1.0 (2026-06-13)
 
-### Added
-- Table component — sortable, paginated, generic typed columns
-- Tabs component — accessible tab nav with active accent indicator
-- ProgressBar component — 5 variants, 3 sizes, custom label support
-- Tooltip component — hover tooltip positioned above target
-- Select component — dropdown with label, placeholder, disabled state
+
+### Features
+
+* add Vitest tests and Storybook for all 6 components ([9e7cec8](https://github.com/man4ish/omnibioai-ui/commit/9e7cec8563033abaa64cc2884b21f2197124253c))
+* OmniBioAI shared UI component library v1.0.0 ([7ffef36](https://github.com/man4ish/omnibioai-ui/commit/7ffef363df344b2163a54bd9cdf89d1711783dd5))
+* phase 3 — new components, CHANGELOG, CI token lint ([2adb435](https://github.com/man4ish/omnibioai-ui/commit/2adb43519cb568aa0b2464c0c40017ccb17d2ddc))
+
+
+### Bug Fixes
+
+* phase 1 component contract fixes ([8adde7a](https://github.com/man4ish/omnibioai-ui/commit/8adde7af4a6fde00cc42e72caa97d5eb1e18f648))
 
 ## [0.1.0] — Phase 1
 
