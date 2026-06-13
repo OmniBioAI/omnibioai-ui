@@ -1,0 +1,32 @@
+name: Token lint
+
+on:
+  push:
+    branches: [main, 'fix/**', 'feat/**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for hardcoded hex colors in src/
+        run: |
+          if grep -rn "#[0-9a-fA-F]\{3,6\}\b" src/ \
+             --include="*.css" --include="*.tsx" --include="*.ts" \
+             --exclude="*.test.tsx" --exclude="*.test.ts"; then
+            echo "❌ Hardcoded hex values found. Use design tokens instead."
+            exit 1
+          else
+            echo "✓ No hardcoded hex values found."
+          fi
+
+      - name: Run tests
+        run: |
+          npm ci
+          npm run test
+
+      - name: Build
+        run: npm run build

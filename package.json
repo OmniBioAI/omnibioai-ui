@@ -15,27 +15,28 @@
     "@man4ish/design-tokens": "file:../omnibioai-design-tokens"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-a11y": "^10.4.4",
+    "@storybook/addon-docs": "^10.4.4",
+    "@storybook/addon-mcp": "^0.6.0",
+    "@storybook/addon-vitest": "^10.4.4",
+    "@storybook/react-vite": "^10.4.4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/browser-playwright": "^4.1.8",
+    "@vitest/coverage-v8": "^4.1.8",
     "jsdom": "^29.1.1",
+    "playwright": "^1.60.0",
+    "standard-version": "^9.5.0",
+    "storybook": "^10.4.4",
     "typescript": "^5.0.0",
     "vite": "^5.0.0",
     "vite-plugin-dts": "^5.0.2",
-    "vitest": "^4.1.8",
-    "storybook": "^10.4.4",
-    "@storybook/react-vite": "^10.4.4",
-    "@chromatic-com/storybook": "^5.2.1",
-    "@storybook/addon-vitest": "^10.4.4",
-    "@storybook/addon-a11y": "^10.4.4",
-    "@storybook/addon-docs": "^10.4.4",
-    "@storybook/addon-mcp": "^0.6.0",
-    "playwright": "^1.60.0",
-    "@vitest/browser-playwright": "^4.1.8",
-    "@vitest/coverage-v8": "^4.1.8"
+    "vitest": "^4.1.8"
   },
   "scripts": {
     "test": "vitest run",
@@ -45,7 +46,10 @@
     "build": "vite build",
     "dev": "vite build --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
   },
   "license": "MIT",
   "repository": {
