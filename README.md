@@ -13,6 +13,7 @@ Shared React component library for the [OmniBioAI](https://github.com/man4ish/om
 - **Fully tested** — 50+ unit tests with Vitest + React Testing Library
 - **Storybook catalogue** — visual stories for every component and variant
 - **Type-safe exports** — full `.d.ts` declarations via vite-plugin-dts
+- **CI token lint** — GitHub Actions workflow blocks hardcoded hex values in CSS and TSX on every push and pull request
 
 ---
 
@@ -414,7 +415,7 @@ omnibioai-ui/
 ├── vite.config.ts        ← library build config
 ├── vitest.config.ts      ← test config (separate from vite)
 ├── tsconfig.json
-├── CHANGELOG.md
+├── CHANGELOG.md          ← release history (Keep a Changelog format)
 └── package.json
 ```
 
@@ -436,7 +437,7 @@ Components reference CSS custom properties from `@man4ish/design-tokens`. No com
 |---|---|
 | [`@man4ish/design-tokens`](https://github.com/man4ish/omnibioai-design-tokens) | CSS custom properties — required peer dependency |
 | [`omnibioai-studio`](https://github.com/man4ish/omnibioai-studio) | Electron + React app — primary consumer |
-| [`omnibioai`](https://github.com/man4ish/omnibioai) | Django backend — 150+ plugin bioinformatics platform |
+| [`omnibioai`](https://github.com/man4ish/omnibioai) | Django backend — 200+ plugin bioinformatics platform |
 | `omnibioai-control-center` | Health dashboard + ecosystem report (consumes design tokens) |
 
 ---
