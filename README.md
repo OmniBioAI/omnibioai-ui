@@ -1,13 +1,13 @@
-# @man4ish/ui
+# @omnibioai/ui
 
-Shared React component library for the [OmniBioAI](https://github.com/man4ish/omnibioai-studio) platform. Provides `Button`, `Badge`, `Card`, `Input`, `StatusDot`, `Spinner`, `Table`, `Tabs`, `ProgressBar`, `Tooltip`, and `Select` components built on unified design tokens with zero hardcoded colors.
+Shared React component library for the [OmniBioAI](https://github.com/OmniBioAI/omnibioai-studio) platform. Provides `Button`, `Badge`, `Card`, `Input`, `StatusDot`, `Spinner`, `Table`, `Tabs`, `ProgressBar`, `Tooltip`, and `Select` components built on unified design tokens with zero hardcoded colors.
 
 ---
 
 ## Overview
 
 - **TypeScript-first** — full type definitions shipped with the package
-- **Design-token driven** — all colors, spacing, and radii come from `@man4ish/design-tokens`; no hardcoded hex values anywhere in the library
+- **Design-token driven** — all colors, spacing, and radii come from `@omnibioai/design-tokens`; no hardcoded hex values anywhere in the library
 - **Tree-shakeable** — built as ES module + CJS with Vite library mode; only import what you use
 - **React 18+ peer dep** — works with any React 18+ project including the OmniBioAI Electron app and any downstream consumer
 - **Fully tested** — 50+ unit tests with Vitest + React Testing Library
@@ -19,14 +19,14 @@ Shared React component library for the [OmniBioAI](https://github.com/man4ish/om
 
 ## Installation
 
-This package is published to the GitHub Packages registry under `@man4ish`.
+This package is published to the GitHub Packages registry under `@omnibioai`.
 
 ### 1. Authenticate with GitHub Packages
 
 Create or update `.npmrc` in your project root:
 
 ```
-@man4ish:registry=https://npm.pkg.github.com
+@omnibioai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
@@ -35,17 +35,17 @@ Your token needs `read:packages` scope. Generate one at GitHub → Settings → 
 ### 2. Install the package
 
 ```bash
-npm install @man4ish/ui @man4ish/design-tokens
+npm install @omnibioai/ui @omnibioai/design-tokens
 ```
 
-`@man4ish/design-tokens` is a required peer — it provides the CSS custom properties that all components reference.
+`@omnibioai/design-tokens` is a required peer — it provides the CSS custom properties that all components reference.
 
 ### 3. Load design tokens
 
 In your app entry point, import the token stylesheet once:
 
 ```ts
-import '@man4ish/design-tokens/dist/tokens.css';
+import '@omnibioai/design-tokens/tokens.css';
 ```
 
 All components will pick up the correct colors, spacing, and radii automatically from there.
@@ -57,7 +57,7 @@ All components will pick up the correct colors, spacing, and radii automatically
 ### `Button`
 
 ```tsx
-import { Button } from '@man4ish/ui';
+import { Button } from '@omnibioai/ui';
 
 <Button variant="primary" onClick={handleRun}>
   Run analysis
@@ -87,7 +87,7 @@ import { Button } from '@man4ish/ui';
 ### `Badge`
 
 ```tsx
-import { Badge } from '@man4ish/ui';
+import { Badge } from '@omnibioai/ui';
 
 <Badge variant="success">Running</Badge>
 <Badge variant="warning">Queued</Badge>
@@ -107,7 +107,7 @@ import { Badge } from '@man4ish/ui';
 ### `Card`
 
 ```tsx
-import { Card } from '@man4ish/ui';
+import { Card } from '@omnibioai/ui';
 
 <Card>
   <h3>Plugin output</h3>
@@ -130,7 +130,7 @@ import { Card } from '@man4ish/ui';
 ### `Input`
 
 ```tsx
-import { Input } from '@man4ish/ui';
+import { Input } from '@omnibioai/ui';
 
 <Input
   label="Sample ID"
@@ -163,7 +163,7 @@ import { Input } from '@man4ish/ui';
 Compact status indicator used in run lists, job monitors, and pipeline dashboards.
 
 ```tsx
-import { StatusDot } from '@man4ish/ui';
+import { StatusDot } from '@omnibioai/ui';
 
 <StatusDot status="running" />   // animated pulse
 <StatusDot status="success" />
@@ -184,7 +184,7 @@ import { StatusDot } from '@man4ish/ui';
 ### `Spinner`
 
 ```tsx
-import { Spinner } from '@man4ish/ui';
+import { Spinner } from '@omnibioai/ui';
 
 <Spinner />
 <Spinner size="sm" />
@@ -202,8 +202,8 @@ import { Spinner } from '@man4ish/ui';
 Generic sortable, paginated table. Columns are fully typed.
 
 ```tsx
-import { Table } from '@man4ish/ui';
-import type { Column } from '@man4ish/ui';
+import { Table } from '@omnibioai/ui';
+import type { Column } from '@omnibioai/ui';
 
 const columns: Column<MyRow>[] = [
   { key: 'name',   label: 'Repository', sortable: true },
@@ -239,8 +239,8 @@ const columns: Column<MyRow>[] = [
 ### `Tabs`
 
 ```tsx
-import { Tabs } from '@man4ish/ui';
-import type { Tab } from '@man4ish/ui';
+import { Tabs } from '@omnibioai/ui';
+import type { Tab } from '@omnibioai/ui';
 
 <Tabs
   tabs={[
@@ -273,7 +273,7 @@ import type { Tab } from '@man4ish/ui';
 ### `ProgressBar`
 
 ```tsx
-import { ProgressBar } from '@man4ish/ui';
+import { ProgressBar } from '@omnibioai/ui';
 
 <ProgressBar value={98.7} variant="success" label="98.7%" />
 <ProgressBar value={60}   variant="accent" />
@@ -294,7 +294,7 @@ import { ProgressBar } from '@man4ish/ui';
 ### `Tooltip`
 
 ```tsx
-import { Tooltip } from '@man4ish/ui';
+import { Tooltip } from '@omnibioai/ui';
 
 <Tooltip content="27/27 services healthy">
   <Badge variant="success">UP</Badge>
@@ -311,8 +311,8 @@ import { Tooltip } from '@man4ish/ui';
 ### `Select`
 
 ```tsx
-import { Select } from '@man4ish/ui';
-import type { SelectOption } from '@man4ish/ui';
+import { Select } from '@omnibioai/ui';
+import type { SelectOption } from '@omnibioai/ui';
 
 <Select
   label="Category"
@@ -345,9 +345,9 @@ Everything is exported from the package root:
 import {
   Button, Badge, Card, Input, StatusDot, Spinner,
   Table, Tabs, ProgressBar, Tooltip, Select,
-} from '@man4ish/ui';
+} from '@omnibioai/ui';
 
-import type { Column, Tab, SelectOption } from '@man4ish/ui';
+import type { Column, Tab, SelectOption } from '@omnibioai/ui';
 ```
 
 Tree-shaking is automatic — unused components are excluded from your bundle at build time.
@@ -357,7 +357,7 @@ Tree-shaking is automatic — unused components are excluded from your bundle at
 ## Local development
 
 ```bash
-git clone https://github.com/man4ish/omnibioai-ui
+git clone https://github.com/OmniBioAI/omnibioai-ui
 cd omnibioai-ui
 npm install
 
@@ -387,7 +387,7 @@ npm run build
 npm link
 
 # In your consuming repo
-npm link @man4ish/ui
+npm link @omnibioai/ui
 ```
 
 ---
@@ -423,7 +423,7 @@ omnibioai-ui/
 
 ## Design token contract
 
-Components reference CSS custom properties from `@man4ish/design-tokens`. No component contains a hardcoded color, spacing value, or radius — all visual decisions are delegated to the token layer. This means:
+Components reference CSS custom properties from `@omnibioai/design-tokens`. No component contains a hardcoded color, spacing value, or radius — all visual decisions are delegated to the token layer. This means:
 
 - Swapping themes (light/dark, brand variants) requires only a token override
 - All OmniBioAI surfaces (Electron app, web, plugin UIs) stay visually consistent from a single source of truth
@@ -435,9 +435,9 @@ Components reference CSS custom properties from `@man4ish/design-tokens`. No com
 
 | Package | Purpose |
 |---|---|
-| [`@man4ish/design-tokens`](https://github.com/man4ish/omnibioai-design-tokens) | CSS custom properties — required peer dependency |
-| [`omnibioai-studio`](https://github.com/man4ish/omnibioai-studio) | Electron + React app — primary consumer |
-| [`omnibioai`](https://github.com/man4ish/omnibioai) | Django backend — 200+ plugin bioinformatics platform |
+| [`@omnibioai/design-tokens`](https://github.com/OmniBioAI/omnibioai-design-tokens) | CSS custom properties — required peer dependency |
+| [`omnibioai-studio`](https://github.com/OmniBioAI/omnibioai-studio) | Electron + React app — primary consumer |
+| [`omnibioai-workbench`](https://github.com/OmniBioAI/omnibioai-workbench) | Django backend — 231-plugin bioinformatics platform (checked out locally as `omnibioai/`) |
 | `omnibioai-control-center` | Health dashboard + ecosystem report (consumes design tokens) |
 
 ---
