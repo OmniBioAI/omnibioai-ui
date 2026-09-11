@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1789151574387" clover="3.2.0">
+  <project timestamp="1789151574387" name="All files">
+    <metrics statements="60" coveredstatements="59" conditionals="111" coveredconditionals="106" methods="34" coveredmethods="32" elements="205" coveredelements="197" complexity="0" loc="60" ncloc="60" packages="11" files="22" classes="22"/>
+    <package name="Badge">
+      <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="Badge.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Badge/Badge.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Badge.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Badge/Badge.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="Button">
+      <metrics statements="1" coveredstatements="1" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="Button.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Button/Button.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Button.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Button/Button.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="15" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="Card">
+      <metrics statements="2" coveredstatements="2" conditionals="15" coveredconditionals="13" methods="1" coveredmethods="1"/>
+      <file name="Card.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Card/Card.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Card.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Card/Card.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="15" coveredconditionals="13" methods="1" coveredmethods="1"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Input">
+      <metrics statements="1" coveredstatements="1" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="Input.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Input/Input.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Input.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Input/Input.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="14" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="ProgressBar">
+      <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <file name="ProgressBar.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/ProgressBar/ProgressBar.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ProgressBar.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/ProgressBar/ProgressBar.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="Select">
+      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="Select.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Select/Select.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Select.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Select/Select.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="33" count="15" type="stmt"/>
+      </file>
+    </package>
+    <package name="Spinner">
+      <metrics statements="1" coveredstatements="1" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="Spinner.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Spinner/Spinner.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Spinner.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Spinner/Spinner.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="9" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="StatusDot">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="StatusDot.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/StatusDot/StatusDot.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="StatusDot.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/StatusDot/StatusDot.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="Table">
+      <metrics statements="37" coveredstatements="36" conditionals="59" coveredconditionals="57" methods="18" coveredmethods="16"/>
+      <file name="Table.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Table/Table.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Table.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Table/Table.tsx">
+        <metrics statements="37" coveredstatements="36" conditionals="59" coveredconditionals="57" methods="18" coveredmethods="16"/>
+        <line num="27" count="19" type="stmt"/>
+        <line num="28" count="19" type="stmt"/>
+        <line num="29" count="19" type="stmt"/>
+        <line num="31" count="19" type="stmt"/>
+        <line num="32" count="16" type="cond" truecount="4" falsecount="0"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="35" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="38" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="19" type="stmt"/>
+        <line num="43" count="19" type="stmt"/>
+        <line num="44" count="19" type="stmt"/>
+        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="50" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="58" count="19" type="stmt"/>
+        <line num="64" count="34" type="stmt"/>
+        <line num="65" count="34" type="stmt"/>
+        <line num="71" count="34" type="stmt"/>
+        <line num="73" count="7" type="stmt"/>
+        <line num="88" count="41" type="stmt"/>
+        <line num="90" count="70" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="52" type="stmt"/>
+        <line num="107" count="52" type="cond" truecount="3" falsecount="0"/>
+        <line num="110" count="14" type="cond" truecount="4" falsecount="0"/>
+        <line num="111" count="4" type="stmt"/>
+        <line num="112" count="14" type="stmt"/>
+        <line num="114" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="117" count="2" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Tabs">
+      <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <file name="Tabs.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Tabs/Tabs.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tabs.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Tabs/Tabs.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="17" count="7" type="cond" truecount="2" falsecount="1"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="30" count="21" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="Tooltip">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Tooltip.css" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Tooltip/Tooltip.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tooltip.tsx" path="/home/manish/Desktop/machine/omnibioai-ui/src/components/Tooltip/Tooltip.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
