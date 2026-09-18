@@ -1,3 +1,10 @@
+/**
+ * Validate the Table component: row and header rendering, the empty-data message and its default,
+ * a custom cell render function, column-click sorting (including non-sortable columns and the
+ * three-state sort cycle), null-value handling, and pagination.
+ *
+ * Developer: Manish Kumar <manish@omnibioai.org>
+ */
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Table } from './Table';
 
@@ -12,27 +19,32 @@ const data = [
 ];
 
 describe('Table', () => {
+  // Render every row's cell values.
   it('renders all rows', () => {
     render(<Table columns={cols} data={data} />);
     expect(screen.getByText('alpha')).toBeInTheDocument();
     expect(screen.getByText('beta')).toBeInTheDocument();
     expect(screen.getByText('gamma')).toBeInTheDocument();
   });
+  // Render every column's header label.
   it('renders column headers', () => {
     render(<Table columns={cols} data={data} />);
     expect(screen.getByText('Name')).toBeInTheDocument();
     expect(screen.getByText('Code')).toBeInTheDocument();
   });
+  // Show the custom empty message when there is no data.
   it('shows empty message when no data', () => {
     render(<Table columns={cols} data={[]} emptyMessage="Nothing here" />);
     expect(screen.getByText('Nothing here')).toBeInTheDocument();
   });
+  // Sort rows ascending on the first click of a sortable header.
   it('sorts ascending on header click', () => {
     render(<Table columns={cols} data={data} />);
     fireEvent.click(screen.getByText('Name'));
     const cells = screen.getAllByRole('cell');
     expect(cells[0].textContent).toBe('alpha');
   });
+  // Render a cell with the column's custom render function.
   it('uses custom render function', () => {
     const customCols = [
       { key: 'name' as const, label: 'Name',
@@ -42,11 +54,13 @@ describe('Table', () => {
     expect(screen.getByText('alpha').tagName).toBe('STRONG');
   });
 
+  // Fall back to the default empty message when none is given.
   it('uses the default empty message', () => {
     render(<Table columns={cols} data={[]} />);
     expect(screen.getByText('No results')).toBeInTheDocument();
   });
 
+  // Leave row order unchanged when a non-sortable header is clicked.
   it('ignores clicks on non-sortable columns', () => {
     const nonSortable = [
       { key: 'name' as const, label: 'Name' },
@@ -57,6 +71,7 @@ describe('Table', () => {
     expect(screen.getAllByRole('cell')[0]).toHaveTextContent('beta');
   });
 
+  // Cycle a sortable header through ascending, descending, and unsorted on repeated clicks.
   it('cycles a sortable column through ascending, descending, and unsorted states', () => {
     render(<Table columns={cols} data={[{ name: 'beta', code: 2 }, { name: 'alpha', code: 1 }]} />);
     const nameHeader = screen.getByText('Name');
@@ -74,6 +89,7 @@ describe('Table', () => {
     expect(nameHeader).not.toHaveClass('sorted-desc');
   });
 
+  // Render the em-dash fallback for a null cell value and keep it stable across sort toggles.
   it('handles null values and renders the fallback cell value', () => {
     const nullableColumns = [
       { key: 'name' as const, label: 'Name', sortable: true },
@@ -88,6 +104,7 @@ describe('Table', () => {
     expect(screen.getAllByRole('cell')[0]).toHaveTextContent('alpha');
   });
 
+  // Paginate rows by pageSize and enable/disable the previous/next page buttons at the boundaries.
   it('paginates rows and exposes navigation state', () => {
     const rows = Array.from({ length: 25 }, (_, index) => ({
       name: `row-${index + 1}`,
