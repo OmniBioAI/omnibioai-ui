@@ -10,3 +10,5 @@ storybook-static
 .npmrc
 .npmrc
 .npmrc
+
+coverage.json
